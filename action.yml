@@ -1,0 +1,17 @@
+name: 'Get Time Action'
+description: 'Get the time in the specified time zone'
+author: 'JantHsueh'
+branding:
+  icon: arrow-right-circle
+  color: gray-dark
+inputs:
+  timeZone:
+    description: 'time zone'
+    required: true
+    default: 8
+outputs:
+  time:
+    description: 'current time'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
